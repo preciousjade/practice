@@ -1,0 +1,38 @@
+body,h1,h2,h3,h4,ul,dl,input,p,dt,dd{margin:0;}
+ul{ list-style: none;padding:0; }
+img,input { border: 0;}
+h1,h2,h3,h4,p,i,b{font-style: normal;font-weight:normal;}
+em{ font-style:normal;}
+input{padding:0;}
+body{font-size:12px;color:#666;font-family: "Microsoft YaHei","宋体","YouYuan","方正准圆箄1�7佄1�7",SimHei,Helvetica,Arial,Sans-serif;}
+a{text-decoration:none;color:#7E7E7E;}a:visited{}a:hover{color: #f60;}
+a span,a em{cursor:pointer;}
+.fl{float:left;}
+.clearfix:after{visibility: hidden;display: block;font-size: 0;content:" ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+.kstl{width: 240px; padding:23px 28px;background:#fff;}
+.kstl h2{font:400 20px 'microsoft yahei';color:#323333;background:url(images/call.png) no-repeat 1px 3px;padding-left:30px;margin-bottom: 10px;}
+.kstl h2 span{font:400 14px 'microsoft yahei';padding-left:20px;color:#999899;}
+.kstl .kaipt{width:238px; height:28px;border: 1px solid #ccc;margin-bottom:10px;}
+.kstl p{width:60px; height:28px;background:#f1f1f1;color:#666;text-align:center;font:400 14px/28px 'microsoft yahei';display:inline-block;float: left;}
+.kstl input{height: 26px;color:#666; border:none;outline: none;font:400 14px/26px 'microsoft yahei';padding-left:8px;}
+.kstl .kaipt input{width: 170px;}
+.kstl .dtm{width:240px; height:30px;margin-bottom:10px;}
+.kstl .dtm .dtmipt{width:120px; height:28px;border: 1px solid #ccc;float: left;}
+.kstl .dtm .dtmipt input{ width: 50px;}
+.kstl .dtm a{ width: 110px; height: 28px;display:block; border:1px solid #f60;float: right;font:400 12px/28px 'microsoft yahei';text-align:center;color:#f60;background:#fff;}
+.clkend{font-size:14px;color:#999;}
+.kstl .dtm a:hover{color:#fff;background:#f60;}
+.error{color:#f00; font: 400 12px/12px 'microsoft yahei';height: 24px; text-indent: center;}
+.kstl .tjbtn{cursor:pointer;width:240px; height:30px; color:#fff; background:#D6000F;font:400 16px/30px 'microsoft yahei';text-align:center;}
+.kstl .tjbtn:hover{ background:#D6000F;}
+.alertk{width:236px;height:236px;padding:30px;background:#fff;display:none;}
+.alert_b{font:700 18px/50px 'microsoft yahei'; color:#f60;text-align:center;background:url(images/yesg.png) no-repeat left center;height: 50px;padding-left: 20px;}
+.alertk p{font:400 15px/20px 'microsoft yahei';color:#333;margin-top: 20px;}
+.alertk a{font:400 14px/26px 'microsoft yahei';color:#f60;text-align:center;display:block;margin: 0 auto;margin-top:20px;}
+.alertk .wsxxbtn{width:240px; height:40px; color:#fff; background:#f60;font:400 16px/40px 'microsoft yahei';text-align:center;margin-top:20px;}
+.kstl .dtmyz .yzmipt{width:120px; height:28px;border: 1px solid #ccc;float: left;}
+.kstl .dtmyz .yzmipt input{float: right; width: 48px;}
+.kstl .dtmyz span{ display: inline-block; padding: 6px 0;}
+.kstl .dtmyz{width:240px; height:30px;display:none;margin-bottom: 10px;}
+.changeVerifyImg{cursor:pointer;}

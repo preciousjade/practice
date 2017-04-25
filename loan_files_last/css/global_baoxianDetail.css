@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/* 登录样式 */
+
+.login_shadow, .login_box {
+	position: absolute;
+	display: none;
+}
+
+.login_shadow {
+	width: 640px;
+	height: 502px;
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	background: #B4B4B4;
+	-moz-opacity: 1;
+	-khtml-opacity:1;
+	-webkit-opacity: 1;
+	opacity: 1;
+	z-index: 99999;
+	border-radius:5px;
+}
+
+.login_box {
+	padding: 18px 15px 0 15px;
+	width: 600px;
+	height: 472px;
+	background: #fff;
+	position: absolute;
+	z-index: 99999;
+	top:5px;
+	left:5px;
+}
+
+.chexian_shadow {
+	width: 582px;
+	height: 412px;
+	position: absolute;
+	left: 50%;
+	margin-left: -325px;
+	top: 100px;
+	background: black;
+	filter: alpha(opacity = 10);
+	-moz-opacity: 0.1;
+	-khtml-opacity: 0.1;
+	-webkit-opacity: 0.1;
+	opacity: 0.1;
+	z-index: 99999;
+	display: none;
+}
+.chexian_box {
+	padding: 7px;
+	width: 540px;
+	height: 355px;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -310px;
+	top: 120px;
+	z-index: 99999;
+	display: none;
+}
+.loginDes{margin:0 4px; padding:10px 18px; height:20px; line-height:20px; border:solid 1px #d7d7d7; background:#f8f8f8 url(/app_images/youhui/v10/pingan/chanpinchaoshi/arrow.gif) no-repeat 5px 14px; color:#666;}
+.loginDes .btnRegister{color:#e24800; text-decoration:underline;}
+.loginDes .btnRegister:hover{color:#666; text-decoration:none;}
+
+.login_box_toolbar {
+	height: 50px;
+	line-height: 50px;
+}
+.login_box_toolbar p {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-top: 15px;
+	color: #666;
+	margin: 0px;
+	padding: 0px;
+}
+.login_box_toolbar a {
+	background: url(/images/popclose.gif) no-repeat;
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin-top: 18px;
+	margin-right: 15px;
+	float: right;
+	text-decoration: none;
+}
+.login_box_toolbar a {
+	text-decoration: none;
+}
+.login_backshadow {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	background: black;
+	z-index: 9999;
+	filter: alpha(opacity = 60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	-webkit-opacity: 0.6;
+	opacity: 0.6;
+	display: none;
+}
+
+
+
+
+.regist_shadow, .regist_box {
+	position: absolute;
+	display: none;
+}
+
+.regist_shadow {
+	width: 580px;
+	height: 530px;
+	position: absolute;
+	left: 50%;
+	margin-left: 10px;
+	top: 100px;
+	background: black;
+	filter: alpha(opacity = 10);
+	-moz-opacity: 0.1;
+	-khtml-opacity: 0.1;
+	-webkit-opacity: 0.1;
+	opacity: 0.1;
+	z-index: 99999;
+}
+.regist_box {
+	padding: 10px;
+	width: 520px;
+	height: 480px;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -310px;
+	top: 120px;
+	z-index: 99999;
+}
+
+.regist_box_toolbar {
+	height: 50px;
+	line-height: 50px;
+}
+.regist_box_toolbar p {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-top: 15px;
+	color: #666;
+	margin: 0px;
+	padding: 0px;
+}
+.regist_box_toolbar a {
+	background: url(/images/popclose.gif) no-repeat;
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin-top: 18px;
+	margin-right: 15px;
+	float: right;
+	text-decoration: none;
+}
+.regist_box_toolbar a {
+	text-decoration: none;
+}
+.regist_backshadow {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	background: black;
+	z-index: 9999;
+	filter: alpha(opacity = 60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	-webkit-opacity: 0.6;
+	opacity: 0.6;
+	display: none;
+}
+.orderFig {
+	padding: 0 4px;
+	-moz-border-radius: 5px;
+	height: 14px;
+	line-height: 14px;
+	margin-right: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #FF0033;
+	color: #fff;
+	float: left;
+	margin-top: 9px;
+}
+.mainleft{position:absolute;z-index:99999;float:left;left:0px;top:0px;width: 235px;height:460px;;display: block;background: #f8f8f8;border-right: solid 1px #d7d7d7;}
+.kstb{		
+		font: bold 16px heiti;
+		height: 50px;
+		display: block;
+		font: bold 16px heiti;
+		margin: 150px 0 0 28px;
+		line-height: 50px;
+	}
+.directBuy{
+	width: 156px;
+	height: 50px;
+	display: block;
+	background: #E24800;
+	color: #fff;
+	font: bold 16px heiti;
+	margin: 0px 0px 0px 28px;
+	line-height: 50px;
+	padding: 0 10px;
+	border-radius: 6px;
+}	
+a.directBuy:hover{
+	background: #ff6329;
+	color: #fff;
+}

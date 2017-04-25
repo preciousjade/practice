@@ -1,0 +1,120 @@
+
+
+
+/*===========================页尾================================*/
+
+#footer_v30_new_all #footer{
+background:none repeat scroll 0 0 #EEEEEE;
+border-top:1px solid #E1DEDD;
+clear:both;
+width:100%;
+font-size:12px;
+margin-top:0!important;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#footer_v30_new_all .foot {
+height:20px;
+overflow:hidden;
+padding:20px;
+width:940px;
+margin:0 auto;
+}
+
+#footer_v30_new_all .foot .c_r {
+float:right;
+}
+#footer_v30_new_all .foot .c_l {
+background:url("http://css2.pingan.com/app_images/pingan/v30/indexnew_v1/word_bg.gif") no-repeat scroll -220px -130px transparent;
+float:left;
+height:95px;
+text-indent:-9999px;
+width:260px;
+}
+
+#footer_v30_new_all .foot .c_l ul li {
+/*background:url(http://css2.pingan.com/app_images/pingan/v30/indexnew_v1/word_bg.gif) no-repeat scroll 0 0 transparent;*/
+background:none;
+height:30px;
+width:100%;
+}
+
+#footer_v30_new_all .foot .c_l .li_1 {
+background-position:0 -36px;
+}
+#footer_v30_new_all .c {zoom:1;}
+#footer_v30_new_all .c:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+
+#footer_v30_new_all .foot .c_l .li_2 {
+background-position:0 -70px;
+}
+#footer_v30_new_all .foot .c_l .li_3 {
+background-position:0 -787px; 
+}
+#footer_v30_new_all .foot .c_l .li_3 a { display:block; width:80%; height:25px;}
+#footer_v30_new_all .foot .c_l .li_4 {
+background-position:0 -835px; display:none;
+}
+#footer_v30_new_all .foot .c_l .li_5 {
+background-position:0 -734px; display:none;
+}
+#footer_v30_new_all .foot .c_r dl {
+display:inline;
+float:left;
+height:140px;
+margin-left:25px;
+text-indent:35px;
+width:140px;
+}
+#footer_v30_new_all .foot .c_r dl.no_margin { margin-left:0;}
+#footer_v30_new_all .foot .c_r dl dt {
+background:url(http://img2.pingan.com/app_images/pingan/v20/one_v20/header/icon_all.gif) no-repeat scroll 0 0 transparent;
+color:#6E5D54;
+font-size:14px;
+font-weight:bold;
+height:30px;
+line-height:30px;
+width:100%; text-align:left;
+}
+#footer_v30_new_all .foot .c_r dl dd {
+height:24px;
+line-height:24px; text-align:left;
+}
+#footer_v30_new_all .foot .c_r dl dt.fir {
+background-position:-270px -774px;
+}
+#footer_v30_new_all .foot .c_r dl dt.sec {
+background-position:-270px -697px;
+}
+#footer_v30_new_all .foot .c_r dl dt.thr {
+background-position:-270px -615px;
+}
+#footer_v30_new_all .foot .c_r dl dt.four {
+background:url(http://img2.pingan.com/app_images/pingan/v20/one_v20/header/ico_foot_add_move.gif) no-repeat 5px center transparent;}
+#footer_v30_new_all .img_erwei { padding-top:8px;}
+#footer_v30_new_all .fm_t2{ margin-top:-2px; font-family:Arial, Helvetica, sans-serif;}
+#footer_v30_new_all .foot .c_r dl {
+text-indent:35px;
+}
+#footer_v30_new_all .foot .c_r dl dd a {
+color:#6E5D54;
+line-height:24px;
+text-decoration:none;
+}
+#footer_v30_new_all .foot .c_r dl dd a:hover {
+color:#FF8106;
+text-decoration:none;
+}
+#footer_v30_new_all .copyright {
+border-top:1px  #E1DFDE;
+color:#8B8B8B;
+line-height:24px;
+padding-top:5px;
+text-align:center;
+width:980px;
+margin:0 auto;
+font-family:Arial, Helvetica, sans-serif, SimSun;
+}
+#footer_v30_new_all .copyright a {
+margin:0 5px;
+}

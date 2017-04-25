@@ -1,0 +1,84 @@
+.download_install{
+    font:12px sans-serif;
+    border:1px solid #7F9DB9;
+    line-height:22px;
+    color:#06F!important;
+    width:138px;
+    height:22px;
+    display:inline-block;
+    
+    cursor:pointer;
+    text-decoration:none;
+    outline:none;
+}
+
+.download_x{
+	margin-left:8px;margin-top:1px;
+	height:20px;
+	line-height:20px;
+	width:18px;
+	text-align:center;
+	font:15px sans-serif;
+	color:red;
+	background:url(../../app_images/pwd/x1.jpg) no-repeat center center;
+}
+
+.wrap_input{
+	border:solid 1px lightgray;
+	
+}
+
+.ipnput_sam{
+
+}
+.passCss{
+	position:absolute;
+	width:200px;
+	height:28px;
+	line-height:28px;
+	border:solid 1px #c3c3c3;
+	vertical-align:middle;
+}
+.passCss1{
+	float: left;top:0px;
+	width:168px;
+	height:20px;
+	line-height:28px;
+	border:solid 1px #c3c3c3;
+	vertical-align:middle;
+}
+.passCss2{
+	float: left;top:0px;clear:both;
+	width:257px;
+	height:36px;
+	line-height:28px;
+	border:solid 1px #c3c3c3;
+	vertical-align:middle;
+}
+.passDivCss
+{
+	width:18px;
+	height:28px;
+	block:inline;
+	float:right;
+	background:url('../../app_images/pwd/LockPwd.jpg') no-repeat center center;
+	margin-right: 8px;
+}
+.passDivCss1
+{
+	width:18px;
+	height:20px;
+	block:inline;
+	float:right;
+	background:url('../../app_images/pwd/LockPwd.jpg') no-repeat center center;
+	margin-right: 8px;
+}
+.passDivCss2
+{
+	width:18px;
+	height:40px;
+	block:inline;
+	float:right;
+	background:url('../../app_images/pwd/LockPwd.jpg') no-repeat center center;
+	margin-right: 8px;
+}

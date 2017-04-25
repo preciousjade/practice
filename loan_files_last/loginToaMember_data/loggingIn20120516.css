@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(../../../../app_css/pingan/v20/global.css?v=101022);
+@import url(../../../../app_css/pingan/v20/simple_c_header.css?v=101022);
+@import url(../../../../app_css/pingan/v20/general.css?v=101022);
+body{ font-family:Arial,"宋体"; font-size:12px; color:#666;}
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, table, th, td,iframe{ margin:0; padding:0;}
+ul,ol,li{list-style-type:none}
+img{ border:0}
+.f_c_ea5504{color:#ea5504;}
+a.aul_ea5504{color:#ea5504; text-decoration:underline}
+a.aul_ea5504:hover{ color:#666; text-decoration:none}
+.clearfix{zoom:1;}
+.clearfix:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+.container{ width:800px; margin:10px auto 0;}
+.h1_title{color:#E24800;font-size:16px;line-height:32px;}
+.p_style{ padding:10px 25px; border:1px solid #d7d7d7; background:#f8f8f8 url(../../../../app_images/pingan/v20/one/loggingIn20120516/arrow.gif) no-repeat 10px -1787px; line-height:18px; margin-top:8px}
+.content{ border:1px solid #d7d7d7; margin:8px 0;}
+.myTbale{ width:750px; margin:auto}
+.myTbale th{text-align:right; padding-right:5px; font-size:14px;}
+.b_s1_c3c3c3{ border:1px solid #c3c3c3; background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/input_bg.gif) repeat-x; height:28px; line-height:28px}
+input.pa_ui_element_focus{ border-color:#3395C2}
+.text{ line-height:18px; padding:4px; margin-top:2px}
+.w198{ width:198px}
+.c_tip_a{ border:1px solid #3395C2; background:#e1f3fe;}
+.por{position:relative}
+#k2,#k1{ position: absolute; z-index:9999}
+.m_l10{ margin-left:10px}
+.w88{ width:88px;}
+.btn_orange{ background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/btn_orange.gif) no-repeat; color:#fff; text-align:center;  float:left; display:inline; width:112px; height:33px; font-size:16px; font-weight:bold; line-height:33px; text-decoration:none; margin:10px 10px 10px 0}
+.help{ border-top:1px dashed #b3b3b3; line-height:30px; background:#f8f8f8; padding:0 10px}
+.help a{line-height:30px;}
+a.ano_666{ color:#666; text-decoration:none}
+a.ano_666:hover{ color:#ea5504; text-decoration:underline}
+.b_s1_d7d7d7{ border:1px solid #d7d7d7;}
+.iLeft{ padding:10px; width:574px; line-height:18px}
+.iRight{ background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/title.gif) repeat-x; width:168px;}
+.iRight h2{ font-size:12px; height:26px; line-height:26px; text-indent:13px; border-bottom:1px solid #d7d7d7}
+a.btn_orange_w100{ display:inline-block; width:100px; background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/button1.gif) no-repeat 0 -50px; height:21px; line-height:21px; color:#fff; text-decoration:none; text-align:center;}
+.m_b10{ margin-bottom:10px}
+.m_t10{ margin-top:10px}
+.list li{background: url(../../../../app_images/pingan/v20/one/loggingIn20120516/synastry_icon.gif) no-repeat; line-height:20px}
+.orangetrigon li{background-position:0px -178px;text-indent:10px;}
+.orangetrigon li a{ color:#666; text-decoration:none}
+.orangetrigon li a:hover{ color:#ea5504; text-decoration:underline}
+.graydot li{background-position:0px -130px; text-indent:10px; padding:0}
+.m_trbl10{ margin:10px;}
+.p_trbl10{ padding:10px}
+.fixList{ border:1px solid #d7d7d7; background:#f8f8f8; padding:10px; margin-top:8px}
+.p_style1{ background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/icon_reg_wy.gif) no-repeat 0 10px; line-height:18px; text-indent:20px; width:738px; margin:0 auto; padding:10px 0; display:block; font-size:14px;}
+.pa_ui_dropselect_input{background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/icon_reg_wy.gif) repeat-x scroll 0 -110px transparent;border-color:#C3C3C3 -moz-use-text-color #C3C3C3 #C3C3C3;border-style:solid none solid solid;border-width:1px medium 1px 1px;font-size:14px;height:28px;line-height:28px;position:relative;}
+.pa_ui_dropselect_button{background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/icon_reg_wy.gif) repeat-x scroll 0 -145px transparent;border:medium none;height:30px;width:30px;}
+.poa{ position:absolute}
+a.aul_666{ color:#666; text-decoration:underline}
+a.aul_666:hover{ color:#ea5504; text-decoration:none}
+.pa_ui_keyboard_click{ float:left;position: static; display:inline; margin-top:5px}
+.fixa a{ margin-top:5px; position:relative; left:20px;}
+.w168{ width:168px}
+.btn_orange_w172{ display:block; background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/btn1.gif) no-repeat; width:172px; height:32px; overflow:hidden; text-indent:-9999px}
+.btn_gray_w172{ display:block; background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/btn_sm_gray.gif) no-repeat; width:172px; height:32px; overflow:hidden; text-indent:-9999px}
+.btn_orange_w193{ display:block; background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/btn2.gif) no-repeat; width:193px; height:33px; overflow:hidden; text-indent:-9999px}
+a.btn_orange_w193:hover,a.btn_orange_w172:hover,a.btn_orange_w100:hover,a.btn_orange:hover{ color:#fff; text-decoration:none}
+.f14{ font-size:14px}
+.w125{ width:125px}
+.w162{ width:162px;}
+a.btn_gray{background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/btn_gray.gif) no-repeat; float:left; display:inline; width:102px;height:32px; line-height:32px; text-align:center; font-size:16px; font-weight:bold; color:#4a4a4a; text-decoration:none; margin-top:10px}
+a.btn_gray:hover{ color:#4a4a4a; text-decoration:none}
+.icon{ background:url(../../../../app_images/pingan/v20/one/loggingIn20120516/icon01.gif) no-repeat; float:right; display:inline; width:18px; height:20px; margin:5px 0 0 10px}
+.m_r10{ margin-right:10px}
+.w128{ width:128px;}
+.p_t2{ padding-top:2px}
+a.btn_green_w79{ display:inline-block; background:url(../../../../app_images/pingan/v20/one/pop-up_program/btn_green.gif) no-repeat;width:79px;height:21px; color:#fff; text-decoration:none;text-align:center; line-height:21px; margin-left:7px}
+a.btn_green_w79:hover{ color:#fff; text-decoration:none; }
+.m_rl10{ margin:0 10px}

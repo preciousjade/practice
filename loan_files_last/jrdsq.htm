@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html><head><script src="/paicclient.do" type="text/javaScript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>金融资产抵押贷款申请</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" href="css/easyLoan.css">
+<script src="js/sdc9_002.js"></script>
+
+
+
+<script type="text/javascript">
+
+var memberi_context_path = "";
+var chaoshi_context_path = "";
+var chaoshi_context_path_https=""
+var jksJSURL="https://jks.pa18.com/pa18/security/js/gatherCollection_jso.js";
+var daikuanContextPath = "";
+
+</script>
+<script src="js/web.js"></script><script src="js/iw_cookie.js"></script><script src="js/sdc9.js" async="" type="text/javascript"></script></head>
+<body>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var member_url = "";
+	var daikuanHost =  "";
+	var js_emall_url = "";
+	var current_url = window.location.href;
+	if(current_url.indexOf("emall_maoji")!=-1){
+		current_url = current_url.replace("?emall_maoji=","#");
+		current_url = current_url.replace("&emall_maoji=","#");
+		window.location.href=current_url;
+	}
+	var emallDomain = "chaoshi.pingan.com";
+	var hj ="";
+	var protocol = "";
+	if(null !=hj && 'feibiao'==hj){
+		protocol = window.location.protocol +"//"+ emallDomain + ".cn";
+	} else {
+		protocol = window.location.protocol +"//"+ emallDomain;
+	}
+	if(window.location.port) {
+		protocol += ":" + window.location.port;
+	}
+	var customerProtocol = window.location.protocol;
+	if(!protocol) {
+		if(customerProtocol == "file:") {
+			customerProtocol = "http:";
+		}
+		protocol = customerProtocol + "";
+	}
+	document.write('<link rel="stylesheet" href="css/index.css" />');
+	document.write('<link rel="stylesheet" href="css/header.css" />');
+	document.write('<link rel="stylesheet" href="css/global_baoxianDetail.css?v=141125" />');
+	document.write('<link type="text/css" href="/css/header.css" rel="stylesheet" />');
+	document.write('<link rel="stylesheet" href="css/footer.css" />');
+	document.write('<link rel="stylesheet" href="css/flagship_store.css" />');
+	document.write('<link rel="stylesheet" href="css/public.css" />');
+	document.write('<meta http-equiv="Cache-Control" content="no-transform " />');
+	document.write('<meta http-equiv="Cache-Control" content="no-siteapp" />');
+</script><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="css/header.css"><link rel="stylesheet" href="css/global_baoxianDetail.css"><link type="text/css" href="css/header.css" rel="stylesheet"><link rel="stylesheet" href="css/footer.css"><link rel="stylesheet" href="css/flagship_store.css"><link rel="stylesheet" href="css/public.css"><meta http-equiv="Cache-Control" content="no-transform "><meta http-equiv="Cache-Control" content="no-siteapp">
+<script type="text/javascript">
+	document.write('<script type="text/javascript" src="js/jquery-1.11.2.min.js"><'+'/script>');
+	document.write('<script type="text/javascript" src="js/addFloatIcons.js"><'+'/script>');
+	document.write('<script type="text/javascript" src="js/pa.ui.min.js"><'+'/script>');
+	document.write('<script type="text/javascript" src="js/iCookie.js"><'+'/script>');
+	document.write('<script type="text/javascript" src="js/public.js"><'+'/script>');
+	 </script><script type="text/javascript" src="js/jquery-1.js"></script><script type="text/javascript" src="js/addFloatIcons.js"></script><script type="text/javascript" src="js/pa.js"></script><script type="text/javascript" src="js/iCookie.js"></script><script type="text/javascript" src="js/public.js"></script>
+
+
+
+
+
+
+<input id="emallJijinUrl" value="" type="hidden">
+<input id="chaoshiUrl" value="" type="hidden">
+<input id="typeWord" value="" type="hidden">
+<div class="nav_header"></div>
+<div id="header">
+     <div class="header">
+         <div class="header_box">
+             <span class="lo">
+				<img src="./images/logo.png" style="margin-left:30px" />
+            <span class="tel">
+				<img src="./images/rz_pic.png" style="margin-left:520px"/>
+
+			</span>
+			</div>
+		</div>
+	</div>
+
+
+
+<iframe name="logoutiframe" id="logoutiframe" style="display:none;"></iframe>
+<form id="logoutform" target="logoutiframe" action="" method="post" style="display:none;"></form>
+<div id="new_shadow" class="logShadow"></div>
+<div id="login_backshadow" class="login_backshadow"></div>
+<div class="login_shadow" id="login_shadow" style="display: none;">
+<div class="login_box" id="login_box" style="display: none;">
+<div style="height:36px;padding-left:4px;">
+<h5 class="loginPageTitle" id="loginPopTitle" style="float:left;">立即登录，体验一账通新服务！</h5>
+<span id="header_exit" class="fr pop_box_close" style="float:right;"><img src="images/pop_close.png" height="14" width="14"></span>
+</div>
+<div class="loginDes">
+登录账号包括： 已验证的Email/手机号码、自设用户名和原一账通用户名！<a href="javascript:void(0)" id="header_register" style="text-decoration: none;background: #E24800;color:#ffffff; padding:2px 5px;">立即免费注册</a>
+</div>
+<iframe id="loginiframe" src="" allowtransparency="true" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" height="440" width="600"></iframe>
+</div>
+</div>
+<script type="text/javascript">
+var currentChannelType = "";
+function setHoverHeader(type){
+currentChannelType = type;
+$(".nav li a").removeClass("on");
+$(".nav ."+type+" > a").addClass("on");
+}
+$(".qjd_licai,.nav_box.licai").hover(
+function(event){
+$(".nav_box.licai").show();
+},
+function(event){
+$(".nav_box.licai").hide();
+}
+);
+$(".qjd_daikuan,.nav_box.daikuan").hover(
+function(event){
+$(".nav_box.daikuan").show();
+},
+function(event){
+$(".nav_box.daikuan").hide();
+}
+);
+$(".qjd_xyk,.nav_box.xinyongka").hover(
+function(event){
+$(".nav_box.xinyongka").show();
+},
+function(event){
+$(".nav_box.xinyongka").hide();
+}
+);
+$(".qjd_touzi,.nav_box.touzi").hover(
+function(event){
+$(".nav_box.touzi").show();
+},
+function(event){
+$(".nav_box.touzi").hide();
+}
+);
+$(".qjd_jj,.nav_box.jijin").hover(
+function(event){
+$(".nav_box.jijin").show();
+},
+function(event){
+$(".nav_box.jijin").hide();
+}
+);
+
+$(".qjd_bx,.nav_box.baoxian").hover(
+function(event){
+$(".nav_box.baoxian").show();
+},
+function(event){
+$(".nav_box.baoxian").hide();
+}
+);
+
+$("#loginPop,#myorder,#favorite").bind("click",function(event){
+loginPop(true,'',false);
+});
+$("#registerPop").bind("click",function(event){
+registerPop(true);
+});
+$("#header_exit").bind("click",function(event){
+loginPop(false);
+});
+$("#search_index").bind("click",function(event){
+search();
+});
+$("#header_logout").bind('click',function(event){
+logout();
+});
+$("#header_register").bind('click',function(event){
+loginPop(false);
+registerPop(true);
+});
+$(function(){
+var str="";
+$.ajax({
+url:protocol+"/newheader.do",
+dataType:"jsonp",
+dataType:"jsonp",
+success:function(json){
+var list = json.hotSearchList;
+for(var i=0;i<list.length;i++) {
+str+='<a href="'+protocol+'/changeProductDetail.shtml?pId='+list[i].productID+'" target="_blank" style="color: #F60;" operation-sid="57">'+list[i].keyWordInfo+'</a>';
+if(list.length-1!=i){
+str+='<span>|</span>';
+}
+}
+$("#hotSearch").html(str);
+$(document).trigger('pa-operation-source');
+},
+error:function(){
+}
+});
+});
+function addDirectBuyBtn(obj,url){
+var html =""+
+'<div class="mainleft" style="">'+
+'<span class="kstb">快速投保，马上来体验吧！</span>'+
+'<a href='+url+' class="directBuy">不登录，直接购买 ></a>'+
+'</div>	'+
+'<div style="clear:both;"></div>';
+obj.append(html);
+}
+//登录
+//  loginPop(true,false,false,"10022")
+function loginPop(state,goUrl,isDirectBuy,customerAppid){
+var appid=getLoginSwitchAppid();
+if(customerAppid) {
+appid = customerAppid;
+}
+if(state === undefined){
+state = true;
+}
+if(state){
+$('#login_backshadow').height($(document).height()).show();
+
+var contentHeight = $(window).height();
+$('#login_shadow').css('top',(getScrollTop() + (contentHeight - $('#login_shadow').height())/2+4) + 'px');
+$('#login_box').css('top', '5px');
+
+var returnUrl = window.location.href;
+var reg=/;jsessionid=.*\?/;
+returnUrl = returnUrl.replace(reg,"?");
+if(returnUrl.indexOf("#pjBtn") != -1) {
+returnUrl = returnUrl.replace("#pjBtn","");
+if(returnUrl.indexOf("?")==-1) {
+returnUrl+="?";
+} else {
+returnUrl+="&";
+}
+returnUrl+="pjBtn=pjBtn";
+}
+if(goUrl){
+returnUrl = goUrl;
+}
+returnUrl = decodeURI(returnUrl);
+returnUrl = encodeURIComponent(returnUrl,"utf-8");
+
+
+$('#login_box, #login_shadow').show();
+$('#loginiframe').attr('src', protocol+'/common/loginToaMember.do?appid='+appid+'&_=' + new Date().getTime()+'&ptag='+returnUrl);
+if(isDirectBuy){
+returnUrl = decodeURIComponent(returnUrl, "utf-8");
+var ww = $(window).width(),lw= $('#login_box').width();
+
+$('#login_box').css("padding","18px 15px 0px 252px");
+$('#login_shadow').css("left",ww/2-464);
+$('#login_shadow').css("width","877px");
+$('#login_shadow').css("margin-left",0);
+addDirectBuyBtn($('#login_box'),returnUrl + '&avoidLogin=avoidLogin');
+}else{
+var ww = $(window).width(),lw= $('#login_box').width();
+$('#login_box').css("padding","18px 15px 0 15px");
+$('#login_box').css("left","5px");
+$('#login_shadow').css("width","640px");
+$('#login_shadow').css("left",(ww/2-315)+"px");
+$('.mainleft').hide();
+}
+
+}else{
+$('#login_backshadow, #login_box, #login_shadow').hide();
+$('#loginiframe').attr('src', '');
+}
+
+}
+function getScrollTop() {
+try {
+var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+} catch(e) {
+}
+return scrollTop;
+}
+//注册
+//registerPop(true,false,"10022")
+function registerPop(state,goUrl,customerAppid){
+var appid=getRegesterSwitchAppid();
+if(customerAppid) {
+appid = customerAppid;
+}
+if(state === undefined){
+state = true;
+}
+
+if(state){
+var returnUrl = window.location.href;
+if(goUrl) {
+returnUrl = goUrl;
+}
+returnUrl = decodeURI(returnUrl);
+returnUrl = encodeURIComponent(returnUrl,"utf-8");
+
+window.open(protocol+'/common/activeMemberFromMobileUser.do?appid='+appid+'&_=' + new Date().getTime()+'&quickRedirect=true&ptag='+returnUrl,'toaWin','scrollbars=yes,status=yes,resizable=yes,top=0,left=0,width='+(screen.availWidth-10)+',height='+(screen.availHeight-45));
+
+}else{
+$('#regist_backshadow, #regist_box, #regist_shadow').hide();
+$('#registerframe').attr('src', '');
+}
+
+}
+//注册
+//其他
+function noticePop(state){
+if(state === undefined){
+state = true;
+}
+
+if(state){
+$('#regist_backshadow').height($(document).height()).show();
+var contentHeight = $(window).height();
+$('#notice_shadow').css('top',(getScrollTop() + (contentHeight - $('#notice_shadow').height())/2) + 'px');
+$('#notice_box').css('top',(getScrollTop() + (contentHeight - $('#notice_box').height())/2-10) + 'px');
+$('#notice_box, #notice_shadow').show();
+}else{
+$('#regist_backshadow, #notice_box, #notice_shadow').hide();
+}
+}
+
+function maskCodePop(state){
+if(state === undefined){
+state = true;
+}
+if(state){
+//var scrollHeight = document.body.scrollHeight;
+var contentHeight = $(window).height();
+$('#maskCodeShadow').height($(document).height()).show();
+$('#maskCodePop').css('top',(getScrollTop() + (contentHeight - $('#maskCodePop').height())/2) + 'px');
+$('#maskCodePop').show();
+}else{
+$('#maskCodePop').hide();
+$('#maskCodeShadow').hide();
+}
+}
+
+function setNickName(){
+maskCodePop(false);
+}
+
+//更新未完成订单数
+function upDataOrderNum() {
+$.ajax({url: protocol+'/ajaxUpdateOrderNumController.do',
+data:{
+randDate: new Date().getTime()
+},
+type: 'POST',
+dataType: 'jsonp',
+success:function(json){
+var obj = json.data;
+if(obj != null && "" != obj && "0" != obj){
+
+$('#orderNum').addClass('b_ff6600');
+$('#orderNum').text(obj.allCount);
+if("0" !=obj.insuranceCount){
+$('#orderBaoxian').addClass('b_ff6600');
+$('#orderBaoxian').text(obj.insuranceCount);
+}
+/* if("0" !=obj.endowmentCount){
+$('#orderYanglao').addClass('b_ff6600');
+$('#orderYanglao').text(obj.endowmentCount);
+}
+if("0" !=obj.financeCount){
+$('#orderBank').addClass('b_ff6600');
+$('#orderBank').text(obj.financeCount);
+}
+if("0" !=obj.loanCount){
+$('#orderDaikuan').addClass('b_ff6600');
+$('#orderDaikuan').text(obj.loanCount);
+}
+if("0" !=obj.touziCount){
+$('#orderTouzi').addClass('b_ff6600');
+$('#orderTouzi').text(obj.touziCount);
+}
+if("0" !=obj.fundCount){
+$('#orderJijin').addClass('b_ff6600');
+$('#orderJijin').text(obj.fundCount);
+} */
+}
+
+}
+});
+}
+//其他
+
+function logout(){
+//退出会员系统
+$("#logoutform").attr('action', protocol+'/logout.jsp').submit();
+setTimeout("location.href = location.href.replace('quickBuy=quickBuy','_=_')", 3000);
+}
+var isLogin = false;
+
+function search(searchType,npage){
+if(!searchType) {
+searchType = $("#searchType").val();
+}
+var searchKeyValue = $("#searchKeyValue").val();
+if(searchKeyValue == "请输入关键字" || !searchKeyValue) {
+searchKeyValue = "";
+}
+var href=protocol+'/search.shtml?typeWord='+searchType+'&keyWord='+searchKeyValue;
+if(npage) {
+href += "&npage="+npage;
+}
+location.href=href;
+}
+var typeWord = $("#typeWord").val();
+if(typeWord) {
+$("#Pingan_all").html($("#search_opt_"+typeWord).html());
+$("#searchType").val(typeWord);
+}
+$.ajax({
+url:protocol+"/memberAlias.jsp",
+dataType:"jsonp",
+success:function(json){
+if(json.isLoginEmall) {
+$("#not_login").hide();
+$("#memberNickName").html(json.memberNickName);
+var sex = json.memberSex == "F" ? "女士":"先生";
+$("#memberMale").html(sex);
+$("#is_login").show();
+upDataOrderNum();
+} else {
+setTimeout("ssoLogin()",500);
+}
+}
+});
+function ssoLogin(){
+var appid = getDefaultAppId();
+$("#loginsso").attr("src",protocol+'/common/loginToaMember.do?appid='+appid +"&ptag="+encodeURIComponent(window.location.href));
+}
+//添加到收藏夹
+function favorite(title,url) {
+if (window.sidebar) {
+window.sidebar.addPanel(title, url,"");
+} else if( document.all ) {
+window.external.AddFavorite( url, title);
+} else if( window.opera && window.print ) {
+alert("添加收藏失败,请同时按\"Ctrl+D\"添加");
+history.go(0);
+return false;
+}
+else
+{
+alert("添加收藏失败,请同时按\"Ctrl+D\"添加");
+return false;
+}
+}
+function getLoginSwitchAppid(){
+var host=location.host;
+if(host.indexOf("licai")>=0) {
+return "10155";
+}else if(host.indexOf("touzi")>=0){
+return "10154";
+}else if(host.indexOf("insurance")>=0){
+return "10157";
+}else if(host.indexOf("jijin")>=0){
+return "10153";
+}else if(host.indexOf("daikuan")>=0){
+return "10073";
+}else{
+return getDefaultAppId();
+}
+}
+function getRegesterSwitchAppid(){
+var host=location.host;
+if(host.indexOf("licai")>=0) {
+return "10155";
+}else if(host.indexOf("touzi")>=0){
+return "10154";
+}else if(host.indexOf("insurance")>=0){
+return "10157";
+}else if(host.indexOf("jijin")>=0){
+return "10153";
+}else if(host.indexOf("daikuan")>=0){
+return "10073";
+}else{
+return getDefaultAppId();
+}
+}
+// 		var html="";
+// 		$.ajax({
+// 		type:"get",
+// 		url:"/queryYqbMenuList.do",
+// 		dataType:"json",
+// 		success:function(data){
+// 			for(var i=0;i<data.length;i++)
+// 			{
+// 				var dataList = data[i].dataList;
+// 				for(var j = 0;j<dataList.length;j++)
+// 				{
+// 					html+="<span>";
+// 					if(j>0)
+// 					{
+// 						html+="<b>|</b>";
+// 					}
+// 					html+='<a target="_blank" href="http://licai.pingan.com/queryYqbController.do?productId='+dataList[j].productId+'" otype="menu" otitle="旗舰店主导航-壹钱包">'+dataList[j].productShortName+'</a>';
+// 					html+="</span>";
+// 				}
+// 			}
+// 			$("#yqbmenulist").html("");
+// 			$("#yqbmenulist").html(html);
+// 		}
+// 		});
+
+//默认根据当前频道进行区分
+function getDefaultAppId()
+{
+return "10022";
+}
+</script>
+<iframe src="loginToaMember.do?appid=10022&amp;ptag=http%3A%2F%2Fdaikuan.pingan.com%2FeasyLoan.shtml" id="loginsso" style="display:none;"></iframe>
+<div id="J_Part1" class="bgf">
+<div class="title_div" style="width:980px;height:52px;text-align:left;margin-left:auto;margin-right:auto;">
+<a class="title_div_a" href="home_page.htm">首页</a> &gt;
+<a href="applyfdd.htm">贷款产品</a> &gt;
+<a href="applyfdd.htm">金融贷</a> &gt;
+<span class="font current">申请资料</span>
+</div>
+<div class="form_div_1">
+<div class="form1_cont">
+<div class="top_title">
+<div class="top_title_left">
+    <div class="red_title">申请贷款</div>
+    <div class="con"><span class="span_x">*</span>填写详细信息</div>
+</div>
+<div class="top_title_right">
+    <div class="top_title_right_close"></div>
+</div>
+</div>
+<div class="form_content">
+<form novalidate="" id="J_Form">
+    <input data-parsley-id="4" name="isToa" value="0" type="hidden">
+    <table>
+
+        <tbody><tr>
+            <th width="20%"><span class="span_x">*</span>姓名：</th>
+            <td width="36%">
+                <input data-parsley-id="6" name="customerName" class="input" required="" data-parsley-required-message="请输入姓名" data-parsley-username="" type="text">
+            </td>
+            <td width="25%"></td>
+        </tr>
+
+        <tr>
+            <th><span class="span_x">*</span>所在城市：</th>
+            <td>
+                <input data-parsley-id="8" name="cityId" type="hidden">
+                <input data-parsley-id="10" name="city" required="" data-parsley-required-message="请选择所在城市" type="hidden">
+                <div class="city_container J_city_select">
+                    <p class="selecttext citytext">请选择</p>
+                    <div class="city_select" style="display:none;">
+                        <span class="city_close"></span>
+                        <div class="city_tabs">
+                            <ul class="tablist">
+                                <li class="current"><a href="javascript:void(0);">省</a></li>
+                                <li class=""><a href="javascript:void(0);">市</a></li>
+                            </ul>
+                            <div class="line"></div>
+                        </div>
+                        <div class="city_cont clearfix">
+                            <ul class="citylist slist" style="display: block;"><li><a href="javascript:void(0)" data-id="2">北京</a></li><li><a href="javascript:void(0)" data-id="3">安徽</a></li><li><a href="javascript:void(0)" data-id="4">福建</a></li><li><a href="javascript:void(0)" data-id="5">甘肃</a></li><li><a href="javascript:void(0)" data-id="6">广东</a></li><li><a href="javascript:void(0)" data-id="7">广西</a></li><li><a href="javascript:void(0)" data-id="8">贵州</a></li><li><a href="javascript:void(0)" data-id="9">海南</a></li><li><a href="javascript:void(0)" data-id="10">河北</a></li><li><a href="javascript:void(0)" data-id="11">河南</a></li><li><a href="javascript:void(0)" data-id="12">黑龙江</a></li><li><a href="javascript:void(0)" data-id="13">湖北</a></li><li><a href="javascript:void(0)" data-id="14">湖南</a></li><li><a href="javascript:void(0)" data-id="15">吉林</a></li><li><a href="javascript:void(0)" data-id="16">江苏</a></li><li><a href="javascript:void(0)" data-id="17">江西</a></li><li><a href="javascript:void(0)" data-id="18">辽宁</a></li><li><a href="javascript:void(0)" data-id="19">内蒙古</a></li><li><a href="javascript:void(0)" data-id="20">宁夏</a></li><li><a href="javascript:void(0)" data-id="21">青海</a></li><li><a href="javascript:void(0)" data-id="22">山东</a></li><li><a href="javascript:void(0)" data-id="23">山西</a></li><li><a href="javascript:void(0)" data-id="24">陕西</a></li><li><a href="javascript:void(0)" data-id="25">上海</a></li><li><a href="javascript:void(0)" data-id="26">四川</a></li><li><a href="javascript:void(0)" data-id="27">天津</a></li><li><a href="javascript:void(0)" data-id="28">西藏</a></li><li><a href="javascript:void(0)" data-id="29">新疆</a></li><li><a href="javascript:void(0)" data-id="30">云南</a></li><li><a href="javascript:void(0)" data-id="31">浙江</a></li><li><a href="javascript:void(0)" data-id="32">重庆</a></li><li><a href="javascript:void(0)" data-id="33">香港</a></li><li><a href="javascript:void(0)" data-id="34">澳门</a></li><li><a href="javascript:void(0)" data-id="35">台湾</a></li></ul>
+                            <ul class="arealist slist" style="display: none;">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th><span class="span_x">*</span>月收入：</th>
+            <td>
+                <div class="select_box_apply">
+                    <input data-parsley-id="12" class="yuegongzi_input" name="salary" placeholder="请选择" readonly="readonly" required="" data-parsley-required-message="请选择月收入" type="text">
+                    <div style="display:none;height:190px;" class="yuegongzi_div">
+                        <ul>
+                            <li data-value="">请选择</li>
+                            <li data-value="＜3000">&lt;3000</li>
+                            <li data-value="3000-3999">3000-3999</li>
+                            <li data-value="4000-4999">4000-4999</li>
+                            <li data-value="5000-9999">5000-9999</li>
+                            <li data-value="＞=10000">&gt;=10000</li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th><span class="span_x">*</span>职业类型：</th>
+            <td>
+                <input data-parsley-id="14" name="occupation" required="" data-parsley-required-message="请选择职业类型" type="hidden">
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="0">工薪族</div>
+                </div>
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="1">股东或老板</div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr id="J_WorkPeriod" style="display: none;">
+            <th>现单位工龄：</th>
+            <td>
+                <input data-parsley-id="16" name="workPeriod" type="hidden">
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="0">&lt;3个月</div>
+                </div>
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="1">3-5个月</div>
+                </div>
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="2">&gt;=6个月</div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr id="J_BusinessPeriod" style="display: none;">
+            <th>营业执照时间：</th>
+            <td>
+                <input data-parsley-id="18" name="businessPeriod" type="hidden">
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="0">&lt;6个月</div>
+                </div>
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="1">6-11个月</div>
+                </div>
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="2">&gt;=1年</div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th><span class="span_x">*</span>房贷情况：</th>
+            <td>
+                <input data-parsley-id="20" name="houseLoanType" required="" data-parsley-required-message="请选择房贷情况" type="hidden">
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="2">已结清</div>
+                </div>
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="1">未结清</div>
+                </div>
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="0">无</div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr id="J_HouseRepaymentPeriod" style="display: none;">
+            <th>房贷已还款情况：</th>
+            <td>
+                <input data-parsley-id="22" name="houseRepaymentPeriod" type="hidden">
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="1">&lt;6个月</div>
+                </div>
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="2">&gt;=6个月</div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th><span class="span_x">*</span>寿险保单情况：</th>
+            <td>
+                <input data-parsley-id="24" name="pinganPolicy" required="" data-parsley-required-message="请选择寿险保单情况" type="hidden">
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="0">无</div>
+                </div>
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="1">3年内</div>
+                </div>
+                <div class="huji">
+                    <div class="no_checked_form1 radio_div" data-value="2">超过3年</div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th width="20%">身份证号：</th>
+            <td width="36%">
+                <input data-parsley-id="26" name="cardID" class="input" placeholder="输入真实身份证号可提升放款速度" data-parsley-checkcardid="" type="text">
+            </td>
+            <td width="25%"></td>
+        </tr>
+
+        <tr>
+            <th><span class="span_x">*</span>常用手机号：</th>
+            <td>
+                <input data-parsley-id="28" id="J_Telephone_Input" name="telephone" maxlength="11" class="input" placeholder="请输入常用手机号" required="" data-parsley-required-message="请输入常用手机号" data-parsley-telephone="" data-parsley-group="[&quot;telephone&quot;, &quot;otp&quot;]" type="text">
+            </td>
+            <td></td>
+        </tr>
+
+        <tr id="J_Imgcode" style="display: none;">
+            <th><span class="span_x">*</span>验证码：</th>
+            <td>
+                <input data-parsley-id="30" id="J_Imgcode_Input" name="vCode" maxlength="4" class="input" placeholder="请输入验证码" style="float:left;width:120px;" data-parsley-required-message="请输入验证码" data-parsley-group="otp" type="text">
+                <img style="float:left;margin-right:10px;margin-left:10px" src="">
+                <span id="J_Get_Imgcode" class="changeVerifyImg">换一张</span>
+            </td>
+            <td id="J_Imgcode_Message"></td>
+        </tr>
+
+        <tr>
+            <th><span class="span_x"></span></th>
+            <td>
+                <input data-parsley-id="32" id="J_Smscode_Input" class="input" maxlength="6" name="activeNo" placeholder="请输入手机动态码" style="width:120px;" required="" data-parsley-required-message="请先获取动态码" data-parsley-hasgetotp="" type="text">
+                <span id="J_Get_Smscode" class="request_code">获取动态码</span>
+            </td>
+            <td id="J_Smscode_Message"></td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <td><a href="javascript:void(0);" data-type="submit" class="btn_a">提交</a></td>
+            <td></td>
+        </tr>
+
+    </tbody></table>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 注册与登录 -->
+    <div id="J_Part2" class="form_div_3">
+        <div id="zc_title" class="third_title">注册一账通账号，登录后可查看贷款申请审批进展。</div>
+        <div id="dl_title" class="third_title">立即登录，登录后可查看贷款申请审批进展，体验一账通新服务！</div>
+
+        <p style="text-align:center;">
+            <a class="zhuce_btn select_bg" id="zhuce1">立即注册</a>
+            <a class="denglu_btn unselect_bg" id="denglu1">立即登录</a>
+            <span id="yesLogin" style="display:none;  font: 600 20px/40px 'microsoft yahei';" class="">正在跳转至您的订单管理中心，查看订单状态</span>
+        </p>
+
+        <!-- 注册 -->
+        <div class="form2_cont zhuce" id="zhuce_step" style="display:none;margin-top:20px;">
+            <div class="third_cont">
+                <iframe id="zhuce_iframe" src="" style="margin:0 auto;height:500px;overflow:hidden;width:810px;" scrolling="no" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <!-- 登录 -->
+        <div class="form2_cont denglu" id="denglu_step" style="display:none;margin-top:20px;">
+            <!-- <div class="third_title">立即登录，登录后可查看贷款申请审批进展，体验一账通新服务！</div> -->
+            <div class="third_cont">
+                <iframe id="denglu_iframe" src="" style="margin:0 auto;height:269px;*height:273px;overflow:hidden;width:600px;position:relative;margin-left:150px;" scrolling="no" frameborder="0"></iframe>
+                <div class="denglu_bottom"><span class="denglu_bottom_span">立即注册<span></span></span></div>
+            </div>
+        </div>
+        
+        <div id="new_adv" style="margin-top: 20px; overflow: hidden; width:920px; margin:20px auto 0;"></div>
+    </div>
+
+    <script type="text/javascript">
+        var checkImgCodeUrl = memberi_context_path + '/pinganone/pa/checkAppVcode.do';
+        var judgeImgCodeUrl = memberi_context_path + '/pinganone/pa/paic/common/appvcode.do';
+        var sendSmsCodeUrl = memberi_context_path + '/pinganone/pa/sendShortMessageBfappvcode.do';
+
+        // 一账通注册
+        var registerMemberByOtp = '/common/registerMemberByOtp.do';
+
+        var memberAlias = chaoshi_context_path +'/memberAlias.jsp';
+
+        // 入库接口
+        var addHfdOrder = '/daikuan/loanEasy.do';
+    </script>
+    <script src="js/gatherCollection_jso.js"></script><object style="position:absolute;left:-500px;top:-500px" data="data:application/x-silverlight-2," type="application/x-silverlight-2" id="mysilverlight" height="0" width="0"><param name="source" value="/assets/evercookie.xap"><param name="onLoad" value="onSilverlightLoad"><param name="onError" value="onSilverlightError"><param name="background" value="Transparent"><param name="windowless" value="true"><param name="minRuntimeVersion" value="4.0.50401.0"><param name="autoUpgrade" value="false"><a href="http://go.microsoft.com/fwlink/?LinkID=149156&amp;v=4.0.50401.0" style="display:none">Get Microsoft Silverlight</a></object>
+    <script src="js/easyLoan.js"></script>
+    <script type="text/javascript" src="js/newAdv.js"></script>
+	
+
+
+
+
+
+
+
+
+
+﻿<link href="css/footer.css" rel="stylesheet" type="text/css">
+<div id="footer_v30_new_all">
+	<div id="footer">
+        <!--底部-->
+        <div  style="margin:0 auto;" >
+            <div class="c_r" >
+                <p style="color:#8B8B8B"><img src="images/phone.png" style="vertical-align:bottom;"/><em>服务热线：</em><span>95558</span>    <em>信用卡热线：</em><span>40088 95558</span></p>
+            </div>
+        </div>
+        <!--版权-->
+        <div class="copyright warpper">
+            <p>
+                中信控股有限责任公司版权所有 Copyright &copy; CITIC Holdings All rights reserved
+            </p>
+            <!---- <p> 陕ICP备14001946号-2</p>
+            <p> <a target="_blank" href="http://www.sznet110.gov.cn/index.jsp"><img src="images/icon_02.gif" alt="" border="0" height="23" width="16"></a> <a target="_blank" href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=440310120110"><img src="images/icon_01.gif" alt="" border="0" height="20" width="15"></a> ICP许可证号 粤ICP备06118290号 </p>------>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	setHoverHeader("dk");
+	setTimeout('exesdcjs()',0);
+    function exesdcjs(){
+      var jDomain="www.pingan.com";
+      var js_path="/app_js/sdc/src/web.js";
+      var domain="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+jDomain;
+      var SDC_js=document.createElement("script");
+      SDC_js.src=domain+js_path;
+      var headElem=document.getElementsByTagName("head")[0];
+      headElem.appendChild(SDC_js);   
+     }
+</script>
+<script type="text/javascript">
+	var sourceApi ="http://rongzi-cms.pingan.com/Fmall/Sourceapi/getSourceId.html";
+</script>
+<script type="text/javascript" src="js/operation.js"></script>
+
+
+
+<object style="position:absolute;left:-500px;top:-500px" data="data:application/x-silverlight-2," type="application/x-silverlight-2" id="mysilverlight" height="0" width="0"><param name="initParams" value="ci_tk=_"><param name="source" value="/assets/evercookie.xap"><param name="onLoad" value="onSilverlightLoad"><param name="onError" value="onSilverlightError"><param name="background" value="Transparent"><param name="windowless" value="true"><param name="minRuntimeVersion" value="4.0.50401.0"><param name="autoUpgrade" value="false"><a href="http://go.microsoft.com/fwlink/?LinkID=149156&amp;v=4.0.50401.0" style="display:none">Get Microsoft Silverlight</a></object><object style="position:absolute;left:-500px;top:-500px" data="data:application/x-silverlight-2," type="application/x-silverlight-2" id="mysilverlight" height="0" width="0"><param name="initParams" value="ci_tk=ba5bff721359972aba3b08514e65bbce800c717c_FCn1+Pm9Uk6Y9sQuoR8q"><param name="source" value="/assets/evercookie.xap"><param name="onLoad" value="onSilverlightLoad"><param name="onError" value="onSilverlightError"><param name="background" value="Transparent"><param name="windowless" value="true"><param name="minRuntimeVersion" value="4.0.50401.0"><param name="autoUpgrade" value="false"><a href="http://go.microsoft.com/fwlink/?LinkID=149156&amp;v=4.0.50401.0" style="display:none">Get Microsoft Silverlight</a></object><div ci_tk="ba5bff721359972aba3b08514e65bbce800c717c_FCn1+Pm9Uk6Y9sQuoR8q" id="userdata_el" style="visibility: hidden; position: absolute;"></div></body></html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
