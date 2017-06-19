@@ -1,0 +1,14 @@
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust: none; font-size:14px}
+h1, h2, h3, h4, h5, h6{font-size:14px;font-weight:normal;}
+.column1_left { width:350px; margin:0 auto; text-align:center;}
+.container { width:350px; height:250px; overflow:hidden; position:relative; }
+.slider li { list-style:none; display:inline; }
+.slider img { width:350px; height:230px; display:block; border:0; }
+.slider2 li { float:left; position:relative }
+.num { position:absolute; right:50px; bottom:1px; height:20px; _bottom:1px; }
+.num li { float: left; width:48px; margin-right:10px; margin-top:5px; height:16px; background:url(../images/img_23.png) no-repeat center center; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../image/sbk/img_23.png', sizingMethod='crop');
+    cursor: pointer; overflow: hidden; }
+.num li.on { background:url(../images/img_21.png) no-repeat center center; margin-top:5px; margin-right:10px; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../image/sbk/img_21.png', sizingMethod='crop');
+    width:48px; height:15px; }
+.idSiideer_pos{height:27px; line-height:27px; color:#FFF; position:absolute; left:0px; bottom:0px; width:350px; z-index:10; text-align:center;}
+.idSiideer_pos2{height:27px; background:#000; position:absolute; left:0px; bottom:0px; width:350px;filter:alpha(opacity=50);opacity:0.5;}
