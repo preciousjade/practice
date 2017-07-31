@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/easyform.css"/>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/easyform.js"></script>
+    <script type="text/javascript">
+        function registrationTypeChange(selectedValue) {
+            if (selectedValue == "个人") {
+                $("#trcompanyname").hide();
+                $("#trorgnum").hide();
+            } else {
+                $("#trcompanyname").show();
+                $("#trorgnum").show();
+            }
+        }
+
+        $(document).ready(function () {
+            $('#reg-form').easyform();
+        });
+    </script>
+    <style type="text/css">
+        .demo {
+            width: 40%;
+            margin: 2% auto;
+            color: #333;
+            background: #fff
+        }
+
+        .top_line {
+            width: 40%;
+            height: 80px;
+            margin: 2% auto 2% auto;
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 0, 0, .075)
+        }
+
+        .login_logo {
+            width: 30%;
+            height: 80%;
+            float: left
+        }
+
+        .line_gray_small {
+            width: 1px;
+            height: 60%;
+            background: rgba(0, 0, 0, .075);
+            float: left;
+            margin: 3% auto
+        }
+
+        .re {
+            width: 35%;
+            height: 80%;
+            margin: 3% auto;
+            float: left;
+            font-size: 30px;
+        }
+
+        form p label {
+            display: block;
+            float: left;
+            font-size: 14px;
+            width: 30%;
+            padding-top: 2%
+        }
+
+        form p {
+            padding: 4px;
+            line-height: 10%;
+            clear: both
+        }
+
+        input,
+        select {
+            border: 1px solid #ccc;
+            padding: 5px 0px;
+            border-radius: 3px;
+            padding-left: 5px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+        }
+
+        input:focus {
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+        }
+
+        input[type="reset"]{
+            padding: 7px 15px;
+            background-color: #3c6db0;
+            text-align: center;
+            border-radius: 5px;
+            overflow: hidden;
+            min-width: 80px;
+            border: none;
+            color: #FFF;
+            box-shadow: 1px 1px 1px rgba(75, 75, 75, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="top_line">
+            <div class="login_logo"><img src="images/login_logo.png" alt="" style="width: 80px;height:80px" /></div>
+            <div class="line_gray_small"></div>
+            <div class="re">注册</div>
+
+        </div>
+
+
+        <div class="demo">
+            <form id="reg-form" class="jqtransform" action="#" method="post">
+                <p>
+                    <label>用户类型：</label>
+                    <select id="registrationType" class="select" onchange="registrationTypeChange(this.options[this.options.selectedIndex].value)">
+                    <option id="organization"  value="单位">单位</option>
+                    <option  id="personal" value="个人">个人</option>
+                </select>
+                </p>
+                <p><label>用户名：</label><input easyform="length:2-16;char-chinese;real-time;" message="昵称必须为2—18位" easytip="disappear:lost-focus;theme:blue;"
+                        type="text" /></p>
+                <p><label>密码：</label><input easyform="length:6-16;char-chinese;real-time;" message="密码必须为6—18位" easytip="disappear:lost-focus;theme:blue;"type="password" /></p>
+                <p><label>确认密码：</label><input easyform="length:6-16;char-chinese;real-time;" message="密码必须为6—18位" easytip="disappear:lost-focus;theme:blue;" type="password" /></p>
+                <p><label>email：</label><input type="text" data-easyform="regex:^[\u4e00-\u9fa5]{2,20}$;real-time;" data-message="用户名必须为2—20位的汉字" easytip="disappear:lost-focus;theme:blue;"/></p>
+                <p><label>姓名：</label><input type="text" data-easyform="regex:^[\u4e00-\u9fa5]{2,20}$;real-time;" data-message="用户名必须为2—20位的汉字" easytip="disappear:lost-focus;theme:blue;"/></p>
+                <p id="trcompanyname">
+                    <label>单位名称：</label>
+                    <input id="companyname" type="text" /></p>
+                <p id="trorgnum">
+                    <label>组织机构代码：</label>
+                    <input id="orgnum" type="text" /></p>
+
+                <p><label>证件号码：</label><input type="text" /></p>
+                <p><label>性别：</label> 男
+                    <input type="radio" class="flat" name="gender" id="genderM" value="M" checked="" required/> 女
+                    <input type="radio" class="flat" name="gender" id="genderF" value="F" />
+                </p>
+                <p><label>QQ：</label><input type="text" /></p>
+                <p><label>手机：</label><input type="text" /></p>
+                <p><label>&nbsp;</label><input style=" padding: 7px 15px;background-color: #3c6db0;text-align: center;border-radius: 5px;overflow: hidden;min-width: 80px;border: none;color: #FFF;box-shadow: 1px 1px 1px rgba(75, 75, 75, 0.3);" type="submit" value="提交" /> <input type="reset" value="重置" /></p>
+            </form>
+        </div>
+
+    </div>
+    <div id="easytip-div-mainuid" style="text-align: left; display: none; position: absolute;">
+        <div class="easytip-text" style="text-align: left; padding: 10px; min-width: 120px;"></div>
+        <div class="easytip-arrow" style="padding: 0px; margin: 0px; width: 0px; height: 0px; position: absolute; border: 10px solid;"></div>
+    </div>
+    <div id="easytip-div-mainpsw1" style="text-align: left; display: none; position: absolute;">
+        <div class="easytip-text" style="text-align: left; padding: 10px; min-width: 120px;"></div>
+        <div class="easytip-arrow" style="padding: 0px; margin: 0px; width: 0px; height: 0px; position: absolute; border: 10px solid;"></div>
+    </div>
+    <div id="easytip-div-mainpsw2" style="text-align: left; display: none; position: absolute;">
+        <div class="easytip-text" style="text-align: left; padding: 10px; min-width: 120px;"></div>
+        <div class="easytip-arrow" style="padding: 0px; margin: 0px; width: 0px; height: 0px; position: absolute; border: 10px solid;"></div>
+    </div>
+    <div id="easytip-div-mainemail" style="text-align: left; display: none; position: absolute;">
+        <div class="easytip-text" style="text-align: left; padding: 10px; min-width: 120px;"></div>
+        <div class="easytip-arrow" style="padding: 0px; margin: 0px; width: 0px; height: 0px; position: absolute; border: 10px solid;"></div>
+    </div>
+    <div id="easytip-div-mainnickname" style="text-align: left; display: none; position: absolute;">
+        <div class="easytip-text" style="text-align: left; padding: 10px; min-width: 120px;"></div>
+        <div class="easytip-arrow" style="padding: 0px; margin: 0px; width: 0px; height: 0px; position: absolute; border: 10px solid;"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>社保申领</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/easyform.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body style="width:100%;height:940px; background-image:url(images/body_bg.jpg);background-size: 100% 940px; ">
+<div class="box_content">
+    <div class="sy_logo">
+        <img src="images/logo.png" alt=""/>
+    </div>
+    <div class="search">
+        <ul class="head_box">
+            <li><img src="images/ewm.jpg" alt=""/></li>
+            <li class="search_right">
+                <form action="" method="get">
+                    <div class="search_box"><input name="" type="text"/></div>
+                    <!--搜索框-->
+                    <div class="ss"><input name="" type="text" value="搜索"/></div>
+                    <!--搜索按钮-->
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="center_content">
+        <div class="left_content">
+            <ul class="left_list query_left">
+                <li id="card"><img id="imgSbk" src="images/sbk.png" alt="" class="left_icon"/><a href="#"
+                                                                                                 style="font-size: 20px;font-size:2rem;;color: #fff;font-weight: bold;pointer-events: none;">社保卡</a>
+                </li>
+                <li onmouseover="handleMenuMouseOver('状态查询')" onmouseout="handleMenuMouseOut('状态查询','新卡申领')"><a
+                        href="/sbkcx.jspx""><img id="imgSearchWhite" src="images/search_white.png" alt="状态查询"
+                                                 class="left_icon"/>状态查询</a>
+                </li>
+                <li onmouseover="handleMenuMouseOver('新卡申领')" onmouseout="handleMenuMouseOut('新卡申领','新卡申领')"
+                    class="nav_current"><a href="/sbksq.jspx"><img id="imgAppli" src="images/c_appli.png" alt=""
+                                                                   class="left_icon"/>新卡申领</a></li>
+                <li onmouseover="handleMenuMouseOver('卡片挂失')" onmouseout="handleMenuMouseOut('卡片挂失','新卡申领')"><a
+                        href="/kpgs.jspx"><img id="imgReportLoss" src="images/report_loss.png" alt=""
+                                               class="left_icon"/>卡片挂失</a></li>
+                <li onmouseover="handleMenuMouseOver('相关知识')" onmouseout="handleMenuMouseOut('相关知识','新卡申领')"><a
+                        href="/xgzs.jspx"><img id="imgKnowledge" src="images/knowledge.png" alt="" class="left_icon"/>相关知识</a>
+                </li>
+                <li onmouseover="handleMenuMouseOver('补卡网点')" onmouseout="handleMenuMouseOut('补卡网点','新卡申领')"><a
+                        href="/bkwd.jspx"><img id="imgCardAddr" src="images/card_addr.png" alt="" class="left_icon"/>补卡网点</a>
+                </li>
+                <li onmouseover="handleMenuMouseOver('密码修改')" onmouseout="handleMenuMouseOut('密码修改','新卡申领')"><a
+                        href="#"><img id="imgChangePass" src="images/change_pass.png" alt="" class="left_icon"
+                                      style="pointer-events: none;"/>密码修改</a></li>
+            </ul>
+
+        </div>
+        <div class="right_content">
+            <div class="right_content_box">
+                <div class="small_headline">
+                    <div class="search_img">
+                        <img src="images/home_pic.png" alt=""/>
+
+                    </div>
+                    <div class="small_headline_font"><a href="#">首页</a> <img src="images/gt.jpg" alt=""/> <a
+                            href="">新卡申领</a> <img src="images/gt.jpg" alt=""/> 正文
+                    </div>
+                    <div class="back_home"><a href="#">[返回首页]</a></div>
+                </div>
+                <div class="query_input">
+
+                    <div class="progress_1">
+                        <div class="progress_pic1"><img id="progressImg" src="images/progress1.png" alt=""/></div>
+
+                        <form id="form1" class="basic-grey">
+                            <label>
+                                <span>姓名：</span>
+                                <input type="text" name="name" id="name" placeholder="请输入姓名" data-easyform="regex:^[\u4e00-\u9fa5]{2,20}$;real-time;" data-message="用户名必须为2—20位的汉字" easytip="disappear:lost-focus;theme:blue;"/>
+                            </label>
+                            <!--  <label>
+                                 <span>手机号:</span>
+                                 <input type="text" name="identity" id="phone" placeholder="请输入手机号"/>
+                             </label> -->
+                            <label>
+                                <span>身份证号:</span>
+                                <input type="text" name="identity" id="identity" placeholder="请输入身份证号"data-easyform="regex:^\d{15}|\d{18}$;real-time;" data-message="身份证号码必须为15或18位" easytip="disappear:lost-focus;theme:blue;"/>
+                            </label>
+                                    <label>
+                                        <span>参保险种 :</span>
+                                        <select name="type" id="type">
+                                    <option value="医疗">医疗</option>
+                                    <option value="养老">养老</option>
+                                    <option value="工伤">工伤</option>
+                                    <option value="生育">生育</option>
+                                </select>
+                            </label>
+
+                            <label>&nbsp;</label>
+                            <input type="button" class="button" value="下一步" style="text-align: center;margin: 2% 35%"
+                                   onclick="step2()" ;/>
+
+                        </form>
+
+                        <div id="form2" class="basic-grey">
+
+                            <label>
+                                <span>制卡银行：</span>
+                                <select name="bank" id="bank">
+                                    <option value="工商银行">工商银行</option>
+                                    <option value="农业银行">农业银行</option>
+                                </select>
+                            </label>
+                            <br/>
+                            <label>
+                                <span>社保卡照片:</span>
+                                <span><input name="cardPicture" id="systemPicture" type="radio" value="立即提取"
+                                             onclick="radioClick('立即提取');"/>立即提取 </span>
+                                <span><input name="cardPicture" id="bankPicture" type="radio" value="工作人员提取"
+                                             onclick="radioClick('工作人员提取');"/>工作人员提取 </span>
+                                <span><input name="cardPicture" id="cardPicture" type="radio" value="个人上传"
+                                             onclick="radioClick('个人上传');"/>个人上传 </span>
+                            </label>
+
+                            <form action="sbktj.jspx" method="post" enctype="multipart/form-data">
+
+                                <label>
+                                    <a name="file" id="file" href="javascript:;" class="a-upload">
+                                        <input type="file" id="img" name="img"
+                                               onchange="upload(this);preview2(uploadedFile);">
+
+                                    </a>
+
+                                    <div id="preview2"></div>
+                                </label>
+
+                                <span>&nbsp;</span>
+                                <input type="button" class="button" value="下一步"
+                                       style="text-align: center;margin: 2% 35%" onclick="step3();"/>
+
+                        </div>
+
+                        <div id="form3" class="basic-grey" style="padding-left: 10%;">
+
+
+                            <label>
+                                <p><span style="width:20%;float: left">姓名：</span>
+                                    <input type="hidden" name="nameS" id="nameS"/>
+                                    <span name="nameSpan" id="nameSpan"></span></p>
+                            </label>
+                            <br/>
+                            <!-- <label>
+                                <p><span style="width:20%;float: left">手机号：</span>
+                                    <span name="phoneSpan" id="phoneSpan" ></span></p>
+                            </label>
+                            <br/> -->
+                            <label>
+                                <p><span style="width:20%;float: left">身份证号:</span>
+                                    <input type="hidden" name="identityS" id="identityS"/>
+                                    <span name="identitySpan" id="identitySpan"></span></p>
+                            </label>
+                            <br/>
+
+                            <label>
+                                <p><span style="width:20%;float: left">参保险种:</span>
+                                    <input type="hidden" name="typeS" id="typeS"/>
+                                    <span name="typeSpan" id="typeSpan"></span></p>
+                            </label>
+                            <br/>
+                            <label>
+                                <p><span style="width:20%;float: left">制卡银行：</span>
+                                    <input type="hidden" name="bankS" id="bankS"/>
+                                    <span name="bankSpan" id="bankSpan"></span></p>
+                            </label>
+
+                            <div id="preview3"></div>
+                            <span>&nbsp;</span>
+                            <input type="submit" class="button" style="text-align: center;margin: 2% 35%" value="确认提交"/>
+
+                        </div>
+                        </form>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="bottom">
+
+    <ul class="map">
+        <li><a href="#">网站声明</a></li>
+        <li class="b_line"></li>
+        <li><a href="#">网站地图</a></li>
+        <li class="b_line"></li>
+        <li><a href="#">联系我们</a></li>
+
+    </ul>
+    <div class="copyright">
+        <span>主办单位：延安市人力资源和社会保障局</span>
+        <span>版权所有：延安市人力资源和社会保障局 陕ICP备11000397号</span>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+<script src="js/newcard.js" type="text/javascript"></script>
+<script src="js/easyform.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#form1').easyform();
+        $('#form2').easyform();
+        $('#form3').easyform();
+    });
+</script>
+
+</body>
+</html>

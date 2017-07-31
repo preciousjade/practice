@@ -1,0 +1,209 @@
+
+@charset "utf-8";
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td, /* table elements 表格元素 */
+img /* img elements 图片元素 */
+{
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+    font: 12px/1.5 '宋体', "Microsoft YaHei", 微软雅黑, tahoma, Srial, helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+em {
+    font-style: normal;
+}
+
+/** 重置列表元素 **/
+ul, ol {
+    list-style: none;
+}
+
+/** 重置超链接元素 **/
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #F40;
+}
+
+/** 重置图片元素 **/
+img {
+    border: 0px;
+}
+
+/** 重置表格元素 **/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: 62.5%; /* 10÷16=62.5% */
+}
+
+body {
+    font-size: 12px;
+    font-size: 1.2rem; /* 12÷10=1.2 */
+}
+
+p {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+.div-relative {
+    position: relative;
+    color: #000;
+    border: 1px solid #000;
+    width: 100%;
+    height: 100%
+}
+
+.div-a {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background: #F00;
+    width: 100%;
+    height: 100%
+}
+
+/* css注释说明： 背景为红色 */
+
+.box_content {
+    width: 62.5%;
+    height: 77.127%;
+    margin: 36px auto;
+}
+
+.sy_logo {
+    width: 78.33%;
+    height: 16.689%;
+    float: left;
+}
+
+.sy_logo img {
+    width: 78.33%;
+    height: 59.776%;
+    margin: 46px auto;
+
+}
+
+.search {
+    width: 21.666%;
+    height: 24.587%;
+    float: right;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+.search_right {
+    width: 100%;
+    float: right;
+    margin: 20px auto;
+}
+
+.search img {
+    float: right;
+    width: 40.154%;
+    height: 58.659%;
+    margin-right: 3.47%;
+    margin-bottom: 6.145%;
+}
+
+.search_box input {
+    width: 77.2%;
+    height: 16.759%;
+    border: 1px solid #ccc;
+    float: left;
+
+
+}
+
+.ss input {
+    width: 17.15%;
+    height: 16.759%;
+    text-align: center;
+    background: #e9eef2;
+    border: 1px solid #ccc;
+    float: right;
+    margin-right: 3.47%;
+
+}
+.center_content {
+    width: 100%;
+    height: 75.274%;
+    clear: both;
+    height: 75.274%;
+}
+
+.left_content {
+    width: 17%;
+    height: 75.274%;
+    float: left;
+    background: #fff;
+}
+.home_left_list{
+    width: 87.434%;
+    height: 95.229%;
+    margin: 10px auto;
+
+}
+.home_left_list li{
+    width: 86.458%;
+    height: 20%;
+    margin: 10px auto;
+
+}
+/*.query_left > .nav_current img {*/
+/*background: #d4271f;*/
+/*}*/
+
+.query_left > .nav_current a {
+    color: #d4271f;
+    background: url("../images/bg2.jpg") no-repeat;
+
+}
+
+.query_left li > a.nav_current:hover {
+    color: #d4271f;
+
+}
+
+.query_left li > a:hover {
+    display: block;
+    color: #d4271f;
+    background: url("../images/bg2.jpg") no-repeat;
+
+}
+
+/*.query_left li > a:hover img {*/
+/*background: #d4271f;*/
+
+/*}*/
+
+.right_content {
+    width: 82%;
+    height: 75.274%;
+    float: left;
+    background: #fff;
+
+}
